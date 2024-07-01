@@ -56,15 +56,19 @@ Sebelum melanjutkan, pastikan Anda telah mencadangkan data penting di server kar
 
    ![Menu Boot TrueNAS Scale](3.jpg)
 
+4. Pastikan data yang ada di dalam drive tersebut sudah di backup, jika sudah aman pilih "Yes".
+
    ![Menu Boot TrueNAS Scale](4.jpg)
 
 4. Pilih "Administrative user (admin)" untuk mulai membuat akun admin yang baru.
 
    ![Menu Boot TrueNAS Scale](5.jpg)
 
-5. Masukkan password untuk user "admin", pastikan anda tidak lupa dengan password yang sudah anda masukkan.
+5. Masukkan password untuk user "admin" dan pastikan anda tidak lupa dengan password yang sudah dimasukkan.
 
    ![Menu Boot TrueNAS Scale](6.jpg)
+
+6. Pilih "OK" untuk melanjutkan ke proses selanjutnya.
 
    ![Menu Boot TrueNAS Scale](7.jpg)
 
