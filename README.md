@@ -67,12 +67,12 @@ Sebelum melanjutkan, pastikan Anda telah mencadangkan data penting di server kar
    ![Menu Boot TrueNAS Scale](8.jpg)
 
    ![Menu Boot TrueNAS Scale](9.jpg)
+   
+7. Setelah instalasi selesai, lepaskan USB drive dan reboot server.
 
    ![Menu Boot TrueNAS Scale](10.jpg)
 
    ![Menu Boot TrueNAS Scale](11.jpg)
-   
-7. Setelah instalasi selesai, lepaskan USB drive dan reboot server.
 
 ### 6. Konfigurasi Awal
 
