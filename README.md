@@ -67,7 +67,7 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
 
     ![Create VM](create-vm-network.png)
 
-8. Periksa kembali konfigurasi yang sudah dipilih, sudah sesuai maka pilih `Finish`
+8. Periksa kembali konfigurasi yang sudah dipilih, jika sudah sesuai maka pilih `Finish`
 
     ![Create VM](create-vm-finish.png)
 
@@ -80,8 +80,12 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
 ### 5. Mulai VM dan Instal TrueNAS Scale
 
 1. Setelah VM dibuat, pilih VM tersebut dan klik tombol `Start`.
+
+   ![Console](vm-console-start.png)
+   
 2. Buka `Console` untuk VM tersebut.
-   ![Console](images/proxmox-console.png)
+   
+   ![Console](vm-console-start-novnc.png)
 
 3. Setelah server boot dari drive, Anda akan melihat menu installer TrueNAS Scale.
    
