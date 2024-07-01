@@ -31,6 +31,10 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
 
    ![Unduh ISO](download-from-url-popup-download.png)
 
+7. Jika sudah selesai makan file ISO akan muncul di halaman.
+
+   ![Unduh ISO](download-from-url-finish.png)
+
 ### 3. Buat VM Baru
 
 1. Klik tombol `Create VM` di antarmuka web Proxmox.
