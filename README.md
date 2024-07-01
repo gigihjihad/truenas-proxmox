@@ -1,13 +1,12 @@
-# Instalasi TrueNAS Scale di Ubuntu Server
+# Instalasi TrueNAS Scale di Proxmox VE 8.2
 
-Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale di server yang sebelumnya menjalankan Ubuntu Server.
+Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai VM di Proxmox VE versi 8.2.
 
 ## Prasyarat
 
-- Sebuah server atau PC yang bisa Anda gunakan untuk TrueNAS Scale.
-- Sebuah USB drive (minimal 8GB atau lebih besar).
+- Server Proxmox yang sudah diinstal dan dikonfigurasi.
 - File ISO TrueNAS Scale.
-- Software untuk membuat USB bootable (misalnya, Balena Etcher, Rufus).
+- Akses ke antarmuka web Proxmox.
 
 ## Langkah-langkah Instalasi TrueNAS Scale
 
@@ -15,76 +14,78 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale di server
 
 Kunjungi [situs web TrueNAS](https://www.truenas.com/download-truenas-scale/) dan unduh ISO TrueNAS Scale terbaru.
 
-### 2. Buat USB Bootable
+### 2. Unggah ISO ke Proxmox
 
-Gunakan software seperti Balena Etcher atau Rufus untuk membuat USB bootable dengan file ISO TrueNAS Scale.
+1. Masuk ke antarmuka web Proxmox.
+2. Buka tab `Datacenter` > `Server Anda` > `Local` > `Content`.
+3. Klik tombol `Upload` dan pilih file ISO TrueNAS Scale yang telah Anda unduh.
+   ![Upload ISO](images/proxmox-upload-iso.png)
 
-**Untuk Balena Etcher:**
+### 3. Buat VM Baru
 
-1. Buka Rufus.
-   ![Buka Rufus](images/rufus-open.png)
-2. Pilih file ISO TrueNAS Scale.
-   ![Pilih ISO](images/rufus-select-iso.png)
-3. Pilih USB drive Anda.
-   ![Pilih USB Drive](images/rufus-select-drive.png)
-4. Klik "Flash" untuk membuat USB bootable.
-   ![Klik Flash](images/rufus-flash.png)
+1. Klik tombol `Create VM` di antarmuka web Proxmox.
+2. Isi `VM ID` dan `Name` sesuai keinginan Anda.
+   ![Create VM](images/proxmox-create-vm.png)
+3. Pada bagian `OS`, pilih `Do not use any media`.
+4. Pada bagian `CD/DVD`, pilih `ISO File` yang telah Anda upload.
+5. Pilih `SCSI` sebagai `Bus/Device` untuk `Hard Disk` dan `VirtIO` untuk `Network`.
+6. Pada bagian `CPU`, pilih jumlah `cores` yang sesuai.
+7. Pada bagian `Memory`, alokasikan jumlah RAM yang diperlukan (misalnya, 8GB).
+8. Pada bagian `Network`, pastikan menggunakan `VirtIO`.
 
-### 3. Cadangkan Data
+### 4. Konfigurasi Disk
 
-Sebelum melanjutkan, pastikan Anda telah mencadangkan data penting di server karena instalasi akan menghapus semua data pada drive yang digunakan untuk instalasi.
+1. Pada bagian `Hard Disk`, pilih `SCSI` sebagai `Bus/Device`.
+2. Tentukan ukuran disk yang diinginkan untuk TrueNAS Scale (misalnya, 100GB).
+   ![Disk Configuration](images/proxmox-disk-config.png)
 
-### 4. Boot dari USB
+### 5. Mulai VM dan Instal TrueNAS Scale
 
-1. Masukkan USB bootable ke server Anda.
-2. Reboot server dan masuk ke pengaturan BIOS/UEFI (biasanya dengan menekan tombol seperti F2, F12, DEL, atau ESC saat booting).
-3. Ubah urutan boot agar boot dari USB drive terlebih dahulu.
-   ![Ubah Urutan Boot](images/bios-boot-order.png)
-4. Simpan perubahan dan keluar dari pengaturan BIOS/UEFI. Server sekarang akan boot dari USB drive.
+1. Setelah VM dibuat, pilih VM tersebut dan klik tombol `Start`.
+2. Buka `Console` untuk VM tersebut.
+   ![Console](images/proxmox-console.png)
 
-### 5. Instal TrueNAS Scale
-
-1. Setelah server boot dari USB drive, Anda akan melihat menu installer TrueNAS Scale.
+3. Setelah server boot dari drive, Anda akan melihat menu installer TrueNAS Scale.
    
    ![Menu Boot TrueNAS Scale](1.jpg)
     
-2. Pilih "Install/Upgrade" dan tekan Enter.
+4. Pilih "Install/Upgrade" dan tekan Enter.
 
    ![Menu Installer TrueNAS Scale](2.jpg)
       
-3. Ikuti petunjuk di layar untuk menginstal TrueNAS Scale. Ini termasuk memilih drive target untuk instalasi (catatan: semua data pada drive ini akan dihapus).
+5. Ikuti petunjuk di layar untuk menginstal TrueNAS Scale. Ini termasuk memilih drive target untuk instalasi (catatan: semua data pada drive ini akan dihapus).
 
    ![Menu Boot TrueNAS Scale](3.jpg)
 
-4. Pastikan data yang ada di dalam drive tersebut sudah di backup, jika sudah aman pilih "Yes".
+6. Pastikan data yang ada di dalam drive tersebut sudah di backup, jika sudah aman pilih "Yes".
 
    ![Menu Boot TrueNAS Scale](4.jpg)
 
-4. Pilih "Administrative user (admin)" untuk mulai membuat akun admin yang baru.
+7. Pilih "Administrative user (admin)" untuk mulai membuat akun admin yang baru.
 
    ![Menu Boot TrueNAS Scale](5.jpg)
 
-5. Masukkan password untuk user "admin" dan pastikan anda tidak lupa dengan password yang sudah dimasukkan.
+8. Masukkan password untuk user "admin" dan pastikan anda tidak lupa dengan password yang sudah dimasukkan.
 
    ![Menu Boot TrueNAS Scale](6.jpg)
 
-6. Pilih "OK" untuk melanjutkan ke proses selanjutnya.
+9. Pilih "OK" untuk melanjutkan ke proses selanjutnya.
 
    ![Menu Boot TrueNAS Scale](7.jpg)
 
-7. Pilih "Yes" jika sudah menggunakan hardware yang baru lalu boot dengan EFI.
+10. Pilih "Yes" jika sudah menggunakan hardware yang baru lalu boot dengan EFI.
 
    ![Menu Boot TrueNAS Scale](8.jpg)
 
-8. Proses instalasi dimulai.
+11. Proses instalasi dimulai.
 
    ![Menu Boot TrueNAS Scale](9.jpg)
    
-8. Setelah instalasi selesai, lepaskan USB drive dan reboot server.
+12. Setelah instalasi selesai, lepaskan USB drive dan reboot server.
 
    ![Menu Boot TrueNAS Scale](10.jpg)
 
-9. Pilih "Reboot System" kemudian pilih "OK".
+13. Pilih "Reboot System" kemudian pilih "OK".
 
    ![Menu Boot TrueNAS Scale](11.jpg)
 
