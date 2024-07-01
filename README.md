@@ -77,7 +77,7 @@ Sebelum melanjutkan, pastikan Anda telah mencadangkan data penting di server kar
 ### 6. Konfigurasi Awal
 
 1. Setelah server reboot, TrueNAS Scale akan mulai. Konsol akan menampilkan alamat IP untuk mengakses antarmuka web TrueNAS.
-   ![Alamat IP Konsol](13.jpg)
+   ![Alamat IP Konsol](12.png)
 2. Buka browser web di komputer yang terhubung ke jaringan yang sama dan masukkan alamat IP tersebut.
 3. Ikuti wizard konfigurasi awal untuk mengatur pengaturan jaringan, membuat pool penyimpanan, mengatur pengguna, dll.
    ![Wizard Konfigurasi](15.jpg)
