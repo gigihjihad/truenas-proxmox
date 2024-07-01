@@ -72,15 +72,19 @@ Sebelum melanjutkan, pastikan Anda telah mencadangkan data penting di server kar
 
    ![Menu Boot TrueNAS Scale](7.jpg)
 
+7. Pilih "Yes" jika sudah menggunakan hardware yang baru lalu boot dengan EFI.
+
    ![Menu Boot TrueNAS Scale](8.jpg)
+
+8. Proses instalasi dimulai.
 
    ![Menu Boot TrueNAS Scale](9.jpg)
    
-7. Setelah instalasi selesai, lepaskan USB drive dan reboot server.
+8. Setelah instalasi selesai, lepaskan USB drive dan reboot server.
 
    ![Menu Boot TrueNAS Scale](10.jpg)
 
-8. Pilih "Reboot System" kemudian pilih "OK".
+9. Pilih "Reboot System" kemudian pilih "OK".
 
    ![Menu Boot TrueNAS Scale](11.jpg)
 
