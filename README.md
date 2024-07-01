@@ -14,24 +14,24 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
 
 1. Kunjungi [situs web TrueNAS](https://www.truenas.com/download-truenas-scale/) dan copy link unduhan trueNAS Scale terbaru.
 2. Masuk ke antarmuka web Proxmox.
-2. Buka tab `Datacenter` > `Server Anda` > `Local` > `ISO Images`.
-3. Klik tombol `Download from URL` dan tunggu muncul pop-up windownya.
+3. Buka tab `Datacenter` > `Server Anda` > `Local` > `ISO Images`.
+4. Klik tombol `Download from URL` dan tunggu muncul pop-up windownya.
    
    ![Unduh ISO](download-from-url.png)
 
-4. Paste link unduhan trueNAS Scale yang sudah anda copy sebelumnya.
+5. Paste link unduhan trueNAS Scale yang sudah anda copy sebelumnya.
 
    ![Unduh ISO](download-from-url-popup.png)
 
-5. Pilih "Query" untuk mengambil nama file menggunakan link dari URL.
+6. Pilih "Query" untuk mengambil nama file menggunakan link dari URL.
 
    ![Unduh ISO](download-from-url-popup-query-url.png)
 
-6. Pilih "Download" untuk mengunduh file dan menyimpannya di local.
+7. Pilih "Download" untuk mengunduh file dan menyimpannya di local.
 
    ![Unduh ISO](download-from-url-popup-download.png)
 
-7. Jika sudah selesai makan file ISO akan muncul di halaman.
+8. Jika sudah selesai makan file ISO akan muncul di halaman.
 
    ![Unduh ISO](download-from-url-finish.png)
 
@@ -41,33 +41,33 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
    
    ![Create VM](create-vm.png)
    
-3. Isi `VM ID` dan `Name` sesuai keinginan Anda.
+2. Isi `VM ID` dan `Name` sesuai keinginan Anda.
    
    ![Create VM](create-vm-general.png)
 
-6. Pada bagian `OS`, pilih `Use CD/DVD disc image file (iso)`, pilih `ISO File` yang telah Anda upload kemudian pilih `Next`.
+3. Pada bagian `OS`, pilih `Use CD/DVD disc image file (iso)`, pilih `ISO File` yang telah Anda upload kemudian pilih `Next`.
 
    ![Create VM](create-vm-iso.png)
    
    ![Create VM](create-vm-iso-next.png)
    
-8. Pilih `SCSI` sebagai `Bus/Device` untuk `Hard Disk`.
+4. Pilih `SCSI` sebagai `Bus/Device` untuk `Hard Disk`.
 
    ![Create VM](create-vm-disk.png)
 
-10. Pada bagian `CPU`, pilih jumlah `cores` yang sesuai.
+5. Pada bagian `CPU`, pilih jumlah `cores` yang sesuai.
 
    ![Create VM](create-vm-cpu.png)
     
-12. Pada bagian `Memory`, alokasikan jumlah RAM yang diperlukan (misalnya, 8GB).
+6. Pada bagian `Memory`, alokasikan jumlah RAM yang diperlukan (misalnya, 8GB).
 
    ![Create VM](create-vm-memory.png)
     
-14. Pada bagian `Network`, pastikan menggunakan `VirtIO`.
+7. Pada bagian `Network`, pastikan menggunakan `VirtIO`.
 
     ![Create VM](create-vm-network.png)
 
-15. Periksa kembali konfigurasi yang sudah dipilih, sudah sesuai maka pilih `Finish`
+8. Periksa kembali konfigurasi yang sudah dipilih, sudah sesuai maka pilih `Finish`
 
     ![Create VM](create-vm-finish.png)
 
