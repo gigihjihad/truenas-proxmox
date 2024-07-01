@@ -62,6 +62,8 @@ Sebelum melanjutkan, pastikan Anda telah mencadangkan data penting di server kar
 
    ![Menu Boot TrueNAS Scale](5.jpg)
 
+5. Masukkan password untuk user "admin", pastikan anda tidak lupa dengan password yang sudah anda masukkan.
+
    ![Menu Boot TrueNAS Scale](6.jpg)
 
    ![Menu Boot TrueNAS Scale](7.jpg)
