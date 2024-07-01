@@ -44,13 +44,28 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
 3. Isi `VM ID` dan `Name` sesuai keinginan Anda.
    
    ![Create VM](create-vm-general.png)
+
+6. Pada bagian `OS`, pilih `Use CD/DVD disc image file (iso)`, pilih `ISO File` yang telah Anda upload.
+
+   ![Create VM](create-vm-iso.png)
    
-5. Pada bagian `OS`, pilih `Do not use any media`.
-6. Pada bagian `CD/DVD`, pilih `ISO File` yang telah Anda upload.
-7. Pilih `SCSI` sebagai `Bus/Device` untuk `Hard Disk` dan `VirtIO` untuk `Network`.
-8. Pada bagian `CPU`, pilih jumlah `cores` yang sesuai.
-9. Pada bagian `Memory`, alokasikan jumlah RAM yang diperlukan (misalnya, 8GB).
-10. Pada bagian `Network`, pastikan menggunakan `VirtIO`.
+   ![Create VM](create-vm-iso-next.png)
+   
+8. Pilih `SCSI` sebagai `Bus/Device` untuk `Hard Disk` dan `VirtIO` untuk `Network`.
+
+   ![Create VM](create-vm-disk.png)
+
+10. Pada bagian `CPU`, pilih jumlah `cores` yang sesuai.
+
+   ![Create VM](create-vm-cpu.png)
+    
+12. Pada bagian `Memory`, alokasikan jumlah RAM yang diperlukan (misalnya, 8GB).
+
+   ![Create VM](create-vm-memory.png)
+    
+14. Pada bagian `Network`, pastikan menggunakan `VirtIO`.
+
+    ![Create VM](create-vm-network.png)
 
 ### 4. Konfigurasi Disk
 
