@@ -3,6 +3,9 @@
 Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai VM di Proxmox VE versi 8.2.
 
 ## Prasyarat
+```bash 
+uname -mov
+```
 
 - Server Proxmox yang sudah diinstal dan dikonfigurasi.
 - File ISO TrueNAS Scale.
