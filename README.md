@@ -23,15 +23,15 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
 
    ![Unduh ISO](download-from-url-popup.png)
 
-6. Pilih "Query" untuk mengambil nama file menggunakan link dari URL.
+6. Pilih `Query URL` untuk mengambil nama file menggunakan link dari URL.
 
    ![Unduh ISO](download-from-url-popup-query-url.png)
 
-7. Pilih "Download" untuk mengunduh file dan menyimpannya di local.
+7. Pilih `Download` untuk mengunduh file dan menyimpannya di local.
 
    ![Unduh ISO](download-from-url-popup-download.png)
 
-8. Jika sudah selesai makan file ISO akan muncul di halaman.
+8. Jika sudah selesai maka file ISO akan muncul di halaman.
 
    ![Unduh ISO](download-from-url-finish.png)
 
@@ -106,23 +106,23 @@ qm set 100 -scsi1 /dev/disk/by-id/ata-ST1000DM010-2DM162_Z4YGEBVJ
 
    ![Menu Boot TrueNAS Scale](3.jpg)
 
-6. Pastikan data yang ada di dalam drive tersebut sudah di backup, jika sudah aman pilih "Yes".
+6. Pastikan data yang ada di dalam drive tersebut sudah di backup, jika sudah aman pilih `Yes`.
 
    ![Menu Boot TrueNAS Scale](4.jpg)
 
-7. Pilih "Administrative user (admin)" untuk mulai membuat akun admin yang baru.
+7. Pilih `Administrative user (admin)` untuk mulai membuat akun admin yang baru.
 
    ![Menu Boot TrueNAS Scale](5.jpg)
 
-8. Masukkan password untuk user "admin" dan pastikan anda tidak lupa dengan password yang sudah dimasukkan.
+8. Masukkan password untuk user `admin` dan pastikan anda tidak lupa dengan password yang sudah dimasukkan.
 
    ![Menu Boot TrueNAS Scale](6.jpg)
 
-9. Pilih "OK" untuk melanjutkan ke proses selanjutnya.
+9. Pilih `OK` untuk melanjutkan ke proses selanjutnya.
 
    ![Menu Boot TrueNAS Scale](7.jpg)
 
-10. Pilih "Yes" jika sudah menggunakan hardware yang baru lalu boot dengan EFI.
+10. Pilih `Yes` jika sudah menggunakan hardware yang baru lalu boot dengan EFI.
 
    ![Menu Boot TrueNAS Scale](8.jpg)
 
@@ -134,7 +134,7 @@ qm set 100 -scsi1 /dev/disk/by-id/ata-ST1000DM010-2DM162_Z4YGEBVJ
 
    ![Menu Boot TrueNAS Scale](10.jpg)
 
-13. Pilih "Reboot System" kemudian pilih "OK".
+13. Pilih `Reboot System` kemudian pilih `OK`.
 
    ![Menu Boot TrueNAS Scale](11.jpg)
 
