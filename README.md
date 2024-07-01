@@ -21,9 +21,9 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
 
    ![Unduh ISO](download-from-url-popup.png)
 
-   ![Unduh ISO](download-from-url-popup-download.png)
-
    ![Unduh ISO](download-from-url-popup-query-url.png)
+
+   ![Unduh ISO](download-from-url-popup-download.png)
 
 ### 3. Buat VM Baru
 
