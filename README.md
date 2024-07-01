@@ -80,6 +80,8 @@ Sebelum melanjutkan, pastikan Anda telah mencadangkan data penting di server kar
 
    ![Menu Boot TrueNAS Scale](10.jpg)
 
+8. Pilih "Reboot System" kemudian pilih "OK".
+
    ![Menu Boot TrueNAS Scale](11.jpg)
 
 ### 6. Konfigurasi Awal
