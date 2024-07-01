@@ -74,7 +74,14 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
 ### 4. Konfigurasi Disk
 
 1. Pada bagian `Hard Disk`, pilih `SCSI` sebagai `Bus/Device`.
-2. Tentukan ukuran disk yang diinginkan untuk TrueNAS Scale (misalnya, 100GB).
+
+```
+lsblk -o +MODEL,SERIAL
+ls /dev/disk/by-id
+qm set 100 -scsi1 /dev/disk/by-id/ata-ST1000DM010-2DM162_Z4YGEBVJ
+```
+   
+3. Tentukan ukuran disk yang diinginkan untuk TrueNAS Scale (misalnya, 100GB).
    ![Disk Configuration](images/proxmox-disk-config.png)
 
 ### 5. Mulai VM dan Instal TrueNAS Scale
