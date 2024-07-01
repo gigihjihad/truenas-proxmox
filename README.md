@@ -45,13 +45,13 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
    
    ![Create VM](create-vm-general.png)
 
-6. Pada bagian `OS`, pilih `Use CD/DVD disc image file (iso)`, pilih `ISO File` yang telah Anda upload.
+6. Pada bagian `OS`, pilih `Use CD/DVD disc image file (iso)`, pilih `ISO File` yang telah Anda upload kemudian pilih `Next`.
 
    ![Create VM](create-vm-iso.png)
    
    ![Create VM](create-vm-iso-next.png)
    
-8. Pilih `SCSI` sebagai `Bus/Device` untuk `Hard Disk` dan `VirtIO` untuk `Network`.
+8. Pilih `SCSI` sebagai `Bus/Device` untuk `Hard Disk`.
 
    ![Create VM](create-vm-disk.png)
 
@@ -66,6 +66,10 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
 14. Pada bagian `Network`, pastikan menggunakan `VirtIO`.
 
     ![Create VM](create-vm-network.png)
+
+15. Periksa kembali konfigurasi yang sudah dipilih, sudah sesuai maka pilih `Finish`
+
+    ![Create VM](create-vm-finish.png)
 
 ### 4. Konfigurasi Disk
 
