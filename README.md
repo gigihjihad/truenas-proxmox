@@ -48,15 +48,17 @@ Sebelum melanjutkan, pastikan Anda telah mencadangkan data penting di server kar
    
    ![Menu Boot TrueNAS Scale](1.jpg)
     
-3. Pilih "Install/Upgrade" dan tekan Enter.
+2. Pilih "Install/Upgrade" dan tekan Enter.
 
    ![Menu Installer TrueNAS Scale](2.jpg)
       
-5. Ikuti petunjuk di layar untuk menginstal TrueNAS Scale. Ini termasuk memilih drive target untuk instalasi (catatan: semua data pada drive ini akan dihapus).
+3. Ikuti petunjuk di layar untuk menginstal TrueNAS Scale. Ini termasuk memilih drive target untuk instalasi (catatan: semua data pada drive ini akan dihapus).
 
    ![Menu Boot TrueNAS Scale](3.jpg)
 
    ![Menu Boot TrueNAS Scale](4.jpg)
+
+4. Pilih "Administrative user (admin)" untuk mulai membuat akun admin yang baru.
 
    ![Menu Boot TrueNAS Scale](5.jpg)
 
