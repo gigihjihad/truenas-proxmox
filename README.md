@@ -38,14 +38,19 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
 ### 3. Buat VM Baru
 
 1. Klik tombol `Create VM` di antarmuka web Proxmox.
-2. Isi `VM ID` dan `Name` sesuai keinginan Anda.
-   ![Create VM](images/proxmox-create-vm.png)
-3. Pada bagian `OS`, pilih `Do not use any media`.
-4. Pada bagian `CD/DVD`, pilih `ISO File` yang telah Anda upload.
-5. Pilih `SCSI` sebagai `Bus/Device` untuk `Hard Disk` dan `VirtIO` untuk `Network`.
-6. Pada bagian `CPU`, pilih jumlah `cores` yang sesuai.
-7. Pada bagian `Memory`, alokasikan jumlah RAM yang diperlukan (misalnya, 8GB).
-8. Pada bagian `Network`, pastikan menggunakan `VirtIO`.
+   
+   ![Create VM](create-vm.png)
+   
+3. Isi `VM ID` dan `Name` sesuai keinginan Anda.
+   
+   ![Create VM](create-vm-general.png)
+   
+5. Pada bagian `OS`, pilih `Do not use any media`.
+6. Pada bagian `CD/DVD`, pilih `ISO File` yang telah Anda upload.
+7. Pilih `SCSI` sebagai `Bus/Device` untuk `Hard Disk` dan `VirtIO` untuk `Network`.
+8. Pada bagian `CPU`, pilih jumlah `cores` yang sesuai.
+9. Pada bagian `Memory`, alokasikan jumlah RAM yang diperlukan (misalnya, 8GB).
+10. Pada bagian `Network`, pastikan menggunakan `VirtIO`.
 
 ### 4. Konfigurasi Disk
 
