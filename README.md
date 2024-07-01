@@ -21,14 +21,14 @@ Gunakan software seperti Balena Etcher atau Rufus untuk membuat USB bootable den
 
 **Untuk Balena Etcher:**
 
-1. Buka Balena Etcher.
-   ![Buka Balena Etcher](images/etcher-open.png)
+1. Buka Rufus.
+   ![Buka Rufus](images/rufus-open.png)
 2. Pilih file ISO TrueNAS Scale.
-   ![Pilih ISO](images/etcher-select-iso.png)
+   ![Pilih ISO](images/rufus-select-iso.png)
 3. Pilih USB drive Anda.
-   ![Pilih USB Drive](images/etcher-select-drive.png)
+   ![Pilih USB Drive](images/rufus-select-drive.png)
 4. Klik "Flash" untuk membuat USB bootable.
-   ![Klik Flash](images/etcher-flash.png)
+   ![Klik Flash](images/rufus-flash.png)
 
 ### 3. Cadangkan Data
 
