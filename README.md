@@ -16,7 +16,14 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
 2. Masuk ke antarmuka web Proxmox.
 2. Buka tab `Datacenter` > `Server Anda` > `Local` > `Content`.
 3. Klik tombol `Download from URL` dan paste link unduhan trueNAS Scale yang sudah anda copy sebelumnya.
-   ![Upload ISO](images/proxmox-upload-iso.png)
+   
+   ![Unduh ISO](download-from-url.png)
+
+   ![Unduh ISO](download-from-url-popup.png)
+
+   ![Unduh ISO](download-from-url-popup-download.png)
+
+   ![Unduh ISO](download-from-url-popup-query-url.png)
 
 ### 3. Buat VM Baru
 
