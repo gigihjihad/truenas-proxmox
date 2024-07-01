@@ -23,7 +23,7 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
 
    ![Unduh ISO](download-from-url-popup.png)
 
-6. Pilih `Query URL` untuk mengambil nama file menggunakan link dari URL.
+6. Pilih ## `Query URL` untuk mengambil nama file menggunakan link dari URL.
 
    ![Unduh ISO](download-from-url-popup-query-url.png)
 
