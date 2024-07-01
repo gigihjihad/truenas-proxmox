@@ -55,6 +55,22 @@ Sebelum melanjutkan, pastikan Anda telah mencadangkan data penting di server kar
 5. Ikuti petunjuk di layar untuk menginstal TrueNAS Scale. Ini termasuk memilih drive target untuk instalasi (catatan: semua data pada drive ini akan dihapus).
 
    ![Menu Boot TrueNAS Scale](3.jpg)
+
+   ![Menu Boot TrueNAS Scale](4.jpg)
+
+   ![Menu Boot TrueNAS Scale](5.jpg)
+
+   ![Menu Boot TrueNAS Scale](6.jpg)
+
+   ![Menu Boot TrueNAS Scale](7.jpg)
+
+   ![Menu Boot TrueNAS Scale](8.jpg)
+
+   ![Menu Boot TrueNAS Scale](9.jpg)
+
+   ![Menu Boot TrueNAS Scale](10.jpg)
+
+   ![Menu Boot TrueNAS Scale](11.jpg)
    
 7. Setelah instalasi selesai, lepaskan USB drive dan reboot server.
 
