@@ -74,18 +74,23 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal TrueNAS Scale sebagai V
 ### 4. Konfigurasi Disk
 
 1. Buka tab `Datacenter` > `Server Anda` > `Shell`.
-2. Identifikasi hard disk yang ingin Anda tambahkan ke Proxmox, dengan menggunakan perintah di bawah.
+
+   ![Disk Configuration](proxmox-shell.png)
+   
+3. Identifikasi hard disk yang ingin Anda tambahkan ke Proxmox, dengan menggunakan perintah di bawah.
    ```
    lsblk -o +MODEL,SERIAL
    ls /dev/disk/by-id
    ```
-3. Pilih hardisk yang akan di mount ke trueNAS, sebagai contoh:
+4. Pilih hardisk yang akan di mount ke trueNAS, sebagai contoh:
+   
    ![Disk Configuration](images/proxmox-disk-config.png)
-4. Ketik perintah di bawah ini untuk melakukan mount sesuai hardisk yang dipilih.
+   
+5. Ketik perintah di bawah ini untuk melakukan mount sesuai hardisk yang dipilih.
    ```
    qm set [VM number] -scsi[number] /dev/disk/by-id/[hardisk]
    ```
-5. Ulangin perintah di atas jika ada dua atau lebih jumlah hardisk yang akan dipasang.
+7. Ulangin perintah di atas jika terdapat dua atau lebih hardisk yang akan dipasang.
    
 3. Tentukan ukuran disk yang diinginkan untuk TrueNAS Scale (misalnya, 100GB).
    ![Disk Configuration](images/proxmox-disk-config.png)
